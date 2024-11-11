@@ -8,8 +8,8 @@
 
 .carousel-item img {
     object-fit: cover !important;
-    width: 100% !important; /* Ensures images cover the container */
-    height: 500px !important;
+    width: 100% !important; 
+    
 }
 
 .carousel-control-prev-icon,

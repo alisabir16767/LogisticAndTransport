@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import './navbar.css';
-import Slide from "../utils/slide";
+
 
 class Navbar extends Component {
   render() {
