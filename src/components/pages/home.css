@@ -1,0 +1,127 @@
+/* Home.css */
+
+/* Centering the text and adding custom styling */
+.countup-container {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+/* Additional styling for the slide component */
+.slide-container {
+    
+    width: 100%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.countup-section {
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    gap: 20px !important;
+    padding: 20px !important;
+    flex-wrap: wrap !important; /* Allows wrapping on smaller screens */
+}
+
+.count {
+    display: flex !important;
+    flex-direction: column !important; 
+    align-items: center !important;
+    min-width: 120px !important; /* Set a minimum width for each count item */
+}
+
+.count-number {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: #f8f9fa !important;
+}
+
+.count-text {
+    font-size: 1rem !important;
+    color: #f8f9fa !important;
+    margin-top: 5px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .countup-section {
+        flex-direction: column !important; /* Stack the count items vertically */
+        gap: 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .count-number {
+        font-size: 1.5rem !important; /* Reduce font size on small screens */
+    }
+    
+    .count-text {
+        font-size: 0.9rem !important;
+    }
+}
+                                                                                                                                                
+
+.container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    padding: 20px !important;
+    flex-wrap: wrap !important; /* Allows the content to stack on smaller screens */
+}
+
+.HomeAboutUs {
+    flex: 1 1 45% !important; /* Each block takes 45% width of the container */
+    margin: 15px !important;
+    width: 50% !important;
+    height: 300px;
+}
+
+.HomeAboutUs h3 {
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+    color: #333 !important;
+    margin-bottom: 10px !important;
+}
+
+.HomeAboutUs p {
+    font-size: 1rem !important;
+    color: #555 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Image styling */
+.HomeAboutUs img {
+    width: 100% !important; /* Ensure image takes full width of the container */
+    height: auto !important; /* Keep the image's aspect ratio */
+    border-radius: 8px !important; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; /* Slight shadow for better visual appeal */
+    object-fit: cover !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column !important; /* Stack content vertically on smaller screens */
+        gap: 20px !important;
+    }
+
+    .HomeAboutUs {
+        flex: 1 1 100% !important; /* Each section takes full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .HomeAboutUs h3 {
+        font-size: 1.5rem !important; /* Slightly reduce header size */
+    }
+
+    .HomeAboutUs p {
+        font-size: 0.9rem !important; /* Reduce paragraph font size */
+    }
+}
+
